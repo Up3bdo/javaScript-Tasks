@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.color-container{
+  width: 150px;
+  position: fixed;
+  right: 15px;
+  top: 50px;
+  padding: 15px;
+}
+.color-container .color{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 2px solid #1783d0;
+  border-radius: 50px;
+  margin: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.color-container .selected-color{
+  border: 5px solid #000 ;
+}
+
+@media (max-width:426px) {
+  .color-container .color{
+    width: 50px;
+    height: 50px;
+  }
+  .color-container{
+    top: 100px;
+    right: 0;
+  }
+}
